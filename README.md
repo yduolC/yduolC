@@ -54,4 +54,16 @@
 11)VM79:510 error occurs:no such file or directory, access 'wxfile://usr/miniprogramLog/log2'  
 12)模拟机上的报错通常重新编译可以解决，通常是访问端口过于缓慢
 ### 此项目仅限于微信小程序学习，禁止用于商业与非法以及非法用途
+## 具体运行界面
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144520.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144532.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144543.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144553.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144601.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144620.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144635.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144648.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144704.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144716.png)
+![image](https://github.com/yduolC/yduolC/blob/master/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-25%20144744.png)
     
