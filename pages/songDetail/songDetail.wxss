@@ -1,0 +1,181 @@
+/* pages/songDetail/songDetail.wxss */
+page{
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg{
+  width: 160%;
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.musicName{
+  position: relative;
+  width: 598rpx;
+  margin: auto;
+  text-align: center;
+  font-size: 50rpx;
+  line-height: 150rpx;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.swiper1{
+  flex: 1;
+}
+
+.swiper2{
+  flex: 1;
+}
+
+/* 底座 */
+.circle {
+  position: relative;
+  z-index: 100;
+  left: 350rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background: #fff;
+  margin: 10rpx 0;
+}
+
+/* 摇杆 */
+.needle {
+  position: relative;
+  z-index: 99;
+  top: -35rpx;
+  left: 340rpx;
+  width: 192rpx;
+  height: 274rpx;
+  transform-origin: 40rpx 0;
+  transform: rotate(-20deg);
+  transition: transform 1s;
+}
+
+/* 摇杆落下 */
+.needleRotate {
+  transform: rotate(0deg);
+}
+
+/* 磁盘 */
+.discContainer {
+  position: relative;
+  width: 598rpx;
+  height: 598rpx;
+  top: -175rpx;
+  margin: auto;
+}
+
+.discAnimation {
+  animation: playimg 20s linear infinite;
+  animation-delay: 1s;
+}
+
+/*设置动画帧 1.from to(只有起始帧和结束帧)  2.百分比(不止两帧)*/
+@keyframes playimg{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.disc {
+  width: 100%;
+  height: 100%;
+}
+
+/* 歌曲封面 */
+.musicImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+
+/* 底部控制器 */
+.musicControl {
+  height: 185rpx;
+  left: 0;
+  border-top: 1rpx solid #fff;
+  width: 100%;
+  display: flex;
+}
+
+.musicControl text {
+  width: 20%;
+  height: 120rpx;
+  line-height: 150rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 60rpx;
+}
+
+.musicControl text.big {
+  font-size: 90rpx;
+}
+
+/* 进度条控制 */
+ .progressControl {
+  height: 105rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressControl view{
+  font-size: 30rpx;
+  color: white;
+}
+
+.progressControl slider{
+  width: 400rpx;
+}
+
+scroll-view {
+  height: 100%;
+}
+
+::-webkit-scrollbar{
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+scroll-view view{
+  color: #c3c3c3;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 80rpx;
+}
+
+.txt_wrap .color{
+  color: white;
+  font-size: 38rpx;
+}
+
+.discAnimation1{
+  animation-play-state: paused;
+}
+
+.txt_wrap {
+  width: 600rpx;
+  margin: auto;
+}

@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">Login</view>
+    <view class="welcome">
+      欢迎回来！
+    </view>
+    <button wx:if="{{!islogin}}" class="confirm-btn" bindtap="login">二维码登录</button>
+    <button wx:else class="confirm-btn" bindtap="loginout">退出登录</button>
+    <text  wx:if="{{base64}}" class="text">请扫描下方二维码登录</text>
+    <image wx:if="{{!islogin}}" src="{{base64}}" class="base64" />
+  </view>
+</view>

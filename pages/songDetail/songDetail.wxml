@@ -1,0 +1,43 @@
+<image class="bg" src="{{song.al.picUrl}}"></image>
+<view class="musicName">{{song.name}}</view>
+
+<!-- 轮播组件 -->
+<swiper class="swiper1">
+  <swiper-item class="swiperItem">
+    <!-- 底座 -->
+    <view class="circle"></view>
+    <!-- 摇杆 -->
+    <image class="needle {{isPlay && 'needleRotate'}}" src="/static/images/song/needle.png"></image>
+    <!-- 磁盘 -->
+    <view class="discContainer {{isPlay ? 'discAnimation' : 'discAnimation1'}}">
+      <image class="disc" src="/static/images/song/disc.png"></image>
+      <!-- 歌曲封面图 -->
+      <image class="musicImg" src="{{song.al.picUrl}}"></image>
+    </view>
+    <!-- 进度条控制 -->
+    <view class="progressControl">
+      <view >{{currentTime}}</view>
+      <slider block-size="12" active-color="white" background-color="#c3c3c3" max="{{max}}" value="{{move}}" bindchange="tuodong"/>
+      <view >{{durationTime}}</view>
+      <!-- <text>{{durationTime}}</text> -->
+    </view>
+  </swiper-item>
+
+  <swiper-item class="swiper2">
+    <!-- 歌词滑动组件 -->
+    <scroll-view class="txt_wrap" scroll-y scroll-top="{{top}}" :enhanced="true" :show-scrollbar="false" >
+      <block >
+        <view wx:for-index='in' wx:for="{{lyricTimeList}}" class="{{in==xb ? 'color':''}}" wx:key="xb">{{item[1]}}</view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+
+<!-- 歌曲播放控制 -->
+<view class="musicControl">
+  <text class="iconfont {{mode=='loop' ? 'icon-shunxubofang' : 'icon-24gl-repeatOnce2'}}" bindtap="changemode"></text>
+  <text class="iconfont icon-shangyishoushangyige" id="pre" bindtap="handleSwitch"></text>
+  <text class="iconfont {{isPlay ? 'icon-pause' : 'icon-bofang1'}} big" bindtap="handleMusicPlay"></text>
+  <text class="iconfont icon-xiayigexiayishou" id="next" bindtap="handleSwitch"></text>
+  <text class="iconfont icon-M_gengduo33"></text>
+</view>
